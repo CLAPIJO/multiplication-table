@@ -22,7 +22,11 @@ public class MultiplicationTable {
     }
 
     public String generateTable(int start, int end) {
-        return null;
+        String line = "";
+        for(int index = start; index <= end; index++) {
+            line = line + generateLine(start, index) + System.lineSeparator();
+        }
+        return line.trim();
     }
 
     public String generateLine(int start, int row) {
