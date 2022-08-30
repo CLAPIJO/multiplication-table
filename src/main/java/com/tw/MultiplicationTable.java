@@ -2,6 +2,10 @@ package com.tw;
 
 public class MultiplicationTable {
     public String create(int start, int end) {
+
+        if(isValid(start, end)){
+            generateTable(start, end);
+        }
         return null;
     }
 
